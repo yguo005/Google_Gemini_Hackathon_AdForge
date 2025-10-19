@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Spinner from './Spinner';
 
 // Fix for SpeechRecognition API not being in standard TypeScript lib
-// By adding these interfaces, we can use the SpeechRecognition API without TypeScript errors.
+// By adding these interfaces, can use the SpeechRecognition API without TypeScript errors.
 interface SpeechRecognition extends EventTarget {
   continuous: boolean;
   interimResults: boolean;

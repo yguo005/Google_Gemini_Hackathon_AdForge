@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import InputForm from './components/InputForm';
 import CampaignResults from './components/CampaignResults';
+import AgentDashboard from './components/AgentDashboard';
 import Spinner from './components/Spinner';
 import type { Campaign } from './types';
 import { generateScriptsAndPrompts, generateImageFromPrompt } from './services/geminiService';
@@ -11,6 +12,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [showDashboard, setShowDashboard] = useState(false);
 
   const handleGenerateCampaign = async (productDescription: string, audiences: string) => {
     setIsLoading(true);
@@ -55,10 +57,27 @@ const App: React.FC = () => {
     }
   };
 
+  if (showDashboard) {
+    return <AgentDashboard onStartDemo={() => {}} />;
+  }
+
   return (
     <div className="min-h-screen bg-slate-900 font-sans">
       <Header />
       <main>
+        <div className="text-center py-8">
+          <button
+            onClick={() => setShowDashboard(true)}
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 mb-8"
+          >
+            🤖 Launch Agent Transparency Demo
+          </button>
+          <p className="text-slate-400 max-w-2xl mx-auto mb-8">
+            See how an AI agent thinks and makes decisions in real-time using campaign data. 
+            Watch the complete OODA loop: Observe, Orient, Decide, Act.
+          </p>
+        </div>
+        
         <InputForm onSubmit={handleGenerateCampaign} isLoading={isLoading} />
         {isLoading && campaigns.length === 0 && (
           <div className="flex flex-col items-center justify-center p-8">
