@@ -1,0 +1,7 @@
+{
+  "name": "AdForge",
+  "description": "An autonomous platform that uses AI to generate, deploy, and optimize hyper-personalized ad campaigns for small businesses. Users describe their product and target audiences, and the system creates tailored scripts and images.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
