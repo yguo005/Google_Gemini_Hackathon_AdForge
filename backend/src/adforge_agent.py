@@ -2,7 +2,7 @@ import json
 import time
 import os
 from datetime import datetime
-from ad_simulator import AdCampaignSimulator
+from .ad_simulator import AdCampaignSimulator
 
 class AdForgeAgent:
     def __init__(self, job_id, gemini_service):

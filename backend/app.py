@@ -7,8 +7,8 @@ import asyncio
 import threading
 from datetime import datetime
 from dotenv import load_dotenv
-from adforge_agent import AdForgeAgent
-from gemini_service import GeminiService
+from src.adforge_agent import AdForgeAgent
+from src.gemini_service import GeminiService
 
 # Load environment variables
 load_dotenv()
@@ -48,7 +48,7 @@ def start_campaign():
                 active_jobs[job_id]["status"] = "RUNNING"
                 
                 # Run the campaign analysis
-                dataset_path = "../digital_marketing_campaign_dataset.csv"
+                dataset_path = "../data/digital_marketing_campaign_dataset.csv"
                 result = loop.run_until_complete(agent.run_intelligent_campaign(dataset_path))
                 
                 # Update final status

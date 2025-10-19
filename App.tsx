@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import InputForm from './components/InputForm';
-import CampaignResults from './components/CampaignResults';
-import AgentDashboard from './components/AgentDashboard';
-import Spinner from './components/Spinner';
-import type { Campaign } from './types';
-import { generateScriptsAndPrompts, generateImageFromPrompt } from './services/geminiService';
+import Header from './src/components/Header';
+import InputForm from './src/components/InputForm';
+import CampaignResults from './src/components/CampaignResults';
+import AgentDashboard from './src/components/AgentDashboard';
+import Spinner from './src/components/Spinner';
+import type { Campaign } from './src/types';
+import { generateScriptsAndPrompts, generateImageFromPrompt } from './src/services/geminiService';
 
 const App: React.FC = () => {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
