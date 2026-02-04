@@ -38,7 +38,7 @@ echo "API_KEY=your_key_here" > .env
 npm run dev
 ```
 
-### **Access Your App**
+### **Access the App**
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:5001
 
