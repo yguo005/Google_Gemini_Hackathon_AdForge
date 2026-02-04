@@ -1,21 +1,21 @@
-# 🤖 AdForge - AI Marketing Agent Transparency Platform
+#  AdForge - AI Marketing Agent Transparency Platform
 
 A revolutionary platform that combines **AI-powered campaign generation** with **transparent AI decision-making** using Google's Gemini AI.
 
-## ✨ **Two Powerful Features**
+##  **Two Powerful Features**
 
-### 🎨 **Original AdForge**
+###  **Original AdForge**
 - **AI-Powered Script Generation**: Create engaging ad copy tailored to specific audiences
 - **Visual Campaign Creation**: Generate stunning ad visuals with detailed prompts
 - **Multi-Audience Targeting**: Generate different campaigns for different target demographics
 
-### 🧠 **Agent Transparency Dashboard**
+###  **Agent Transparency Dashboard**
 - **Real-time OODA Loop**: Watch AI think through Observe, Orient, Decide, Act
 - **Live AI Reasoning**: See exactly how Gemini analyzes campaign data
 - **Transparent Decision-Making**: Every AI thought process is visible
 - **Campaign Simulation**: Using real marketing data from CSV dataset
 
-## 🚀 **Quick Start**
+##  **Quick Start**
 
 ### **Prerequisites**
 - Node.js and Python 3.x installed
@@ -42,18 +42,15 @@ npm run dev
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:5001
 
-## 🏗️ **Architecture**
+##  **Architecture**
 
 - **Frontend**: React + TypeScript + Vite
 - **Backend**: Python + Flask + Gemini AI
 - **AI Integration**: Real Google Gemini API
 - **Data**: Real marketing campaign dataset
 
-## 📚 **Documentation**
+##  **Documentation**
 
 - **[Complete Setup Guide](docs/SETUP_GUIDE.md)** - Detailed installation instructions
 - **[Project Structure](PROJECT_STRUCTURE.md)** - Code organization overview
 
-## 🎯 **Perfect for Hackathons**
-
-Showcase **transparent AI decision-making** with real-time visualization of how artificial intelligence thinks and makes strategic marketing decisions!
